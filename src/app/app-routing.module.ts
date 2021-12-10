@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'profes-ed',
     loadChildren: () => import('./tabpages/profes-ed/profes-ed.module').then( m => m.ProfesEdPageModule)
   },
+  {
+    path: 'eng',
+    loadChildren: () => import('./major/eng/eng.module').then( m => m.EngPageModule)
+  },
 
 ];
 
