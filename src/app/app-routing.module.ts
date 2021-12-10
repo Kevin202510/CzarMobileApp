@@ -10,7 +10,19 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'major',
+    loadChildren: () => import('./tabpages/major/major.module').then( m => m.MajorPageModule)
   },
+  {
+    path: 'gener-ed',
+    loadChildren: () => import('./tabpages/gener-ed/gener-ed.module').then( m => m.GenerEdPageModule)
+  },
+  {
+    path: 'profes-ed',
+    loadChildren: () => import('./tabpages/profes-ed/profes-ed.module').then( m => m.ProfesEdPageModule)
+  },
+
 ];
 
 @NgModule({
